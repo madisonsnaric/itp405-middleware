@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Auth; 
 
-class MaintenaceMode
+class MaintenanceMode
 {
     /**
      * Handle an incoming request.
@@ -17,7 +17,7 @@ class MaintenaceMode
     public function handle($request, Closure $next)
     {
         if (Auth::check()) {
-            return $next($request);
+            return redirect('/maintenance')
         } else {
             return redirect('/login'); 
         }

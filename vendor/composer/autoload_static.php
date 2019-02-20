@@ -421,6 +421,7 @@ class ComposerStaticInit9d46292e4624fe71b146747bd27879c7
 
     public static $classMap = array (
         'App\\Artist' => __DIR__ . '/../..' . '/app/Artist.php',
+        'App\\Configuration' => __DIR__ . '/../..' . '/app/Configuration.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Genre' => __DIR__ . '/../..' . '/app/Genre.php',
@@ -435,7 +436,9 @@ class ComposerStaticInit9d46292e4624fe71b146747bd27879c7
         'App\\Http\\Controllers\\GenrestwoController' => __DIR__ . '/../..' . '/app/Http/Controllers/GenrestwoController.php',
         'App\\Http\\Controllers\\InvoicesController' => __DIR__ . '/../..' . '/app/Http/Controllers/InvoicesController.php',
         'App\\Http\\Controllers\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/LoginController.php',
+        'App\\Http\\Controllers\\MaintenanceController' => __DIR__ . '/../..' . '/app/Http/Controllers/MaintenanceController.php',
         'App\\Http\\Controllers\\PlaylistController' => __DIR__ . '/../..' . '/app/Http/Controllers/PlaylistController.php',
+        'App\\Http\\Controllers\\SettingsController' => __DIR__ . '/../..' . '/app/Http/Controllers/SettingsController.php',
         'App\\Http\\Controllers\\SignUpController' => __DIR__ . '/../..' . '/app/Http/Controllers/SignUpController.php',
         'App\\Http\\Controllers\\TracksController' => __DIR__ . '/../..' . '/app/Http/Controllers/TracksController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
@@ -443,6 +446,7 @@ class ComposerStaticInit9d46292e4624fe71b146747bd27879c7
         'App\\Http\\Middleware\\Authenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticated.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
+        'App\\Http\\Middleware\\MaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/MaintenanceMode.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
@@ -2888,6 +2892,7 @@ class ComposerStaticInit9d46292e4624fe71b146747bd27879c7
         'PhpParser\\Node\\Expr\\AssignOp\\BitwiseAnd' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseAnd.php',
         'PhpParser\\Node\\Expr\\AssignOp\\BitwiseOr' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseOr.php',
         'PhpParser\\Node\\Expr\\AssignOp\\BitwiseXor' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseXor.php',
+        'PhpParser\\Node\\Expr\\AssignOp\\Coalesce' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Coalesce.php',
         'PhpParser\\Node\\Expr\\AssignOp\\Concat' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Concat.php',
         'PhpParser\\Node\\Expr\\AssignOp\\Div' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Div.php',
         'PhpParser\\Node\\Expr\\AssignOp\\Minus' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Minus.php',

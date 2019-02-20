@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Artist' => $baseDir . '/app/Artist.php',
+    'App\\Configuration' => $baseDir . '/app/Configuration.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Genre' => $baseDir . '/app/Genre.php',
@@ -21,7 +22,9 @@ return array(
     'App\\Http\\Controllers\\GenrestwoController' => $baseDir . '/app/Http/Controllers/GenrestwoController.php',
     'App\\Http\\Controllers\\InvoicesController' => $baseDir . '/app/Http/Controllers/InvoicesController.php',
     'App\\Http\\Controllers\\LoginController' => $baseDir . '/app/Http/Controllers/LoginController.php',
+    'App\\Http\\Controllers\\MaintenanceController' => $baseDir . '/app/Http/Controllers/MaintenanceController.php',
     'App\\Http\\Controllers\\PlaylistController' => $baseDir . '/app/Http/Controllers/PlaylistController.php',
+    'App\\Http\\Controllers\\SettingsController' => $baseDir . '/app/Http/Controllers/SettingsController.php',
     'App\\Http\\Controllers\\SignUpController' => $baseDir . '/app/Http/Controllers/SignUpController.php',
     'App\\Http\\Controllers\\TracksController' => $baseDir . '/app/Http/Controllers/TracksController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
@@ -29,6 +32,7 @@ return array(
     'App\\Http\\Middleware\\Authenticated' => $baseDir . '/app/Http/Middleware/Authenticated.php',
     'App\\Http\\Middleware\\CheckForMaintenanceMode' => $baseDir . '/app/Http/Middleware/CheckForMaintenanceMode.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
+    'App\\Http\\Middleware\\MaintenanceMode' => $baseDir . '/app/Http/Middleware/MaintenanceMode.php',
     'App\\Http\\Middleware\\RedirectIfAuthenticated' => $baseDir . '/app/Http/Middleware/RedirectIfAuthenticated.php',
     'App\\Http\\Middleware\\TrimStrings' => $baseDir . '/app/Http/Middleware/TrimStrings.php',
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
@@ -2474,6 +2478,7 @@ return array(
     'PhpParser\\Node\\Expr\\AssignOp\\BitwiseAnd' => $vendorDir . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseAnd.php',
     'PhpParser\\Node\\Expr\\AssignOp\\BitwiseOr' => $vendorDir . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseOr.php',
     'PhpParser\\Node\\Expr\\AssignOp\\BitwiseXor' => $vendorDir . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseXor.php',
+    'PhpParser\\Node\\Expr\\AssignOp\\Coalesce' => $vendorDir . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Coalesce.php',
     'PhpParser\\Node\\Expr\\AssignOp\\Concat' => $vendorDir . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Concat.php',
     'PhpParser\\Node\\Expr\\AssignOp\\Div' => $vendorDir . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Div.php',
     'PhpParser\\Node\\Expr\\AssignOp\\Minus' => $vendorDir . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Minus.php',

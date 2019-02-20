@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 class MaintenanceController extends Controller
 {
-    return view('maintenance')
+    public function index()
+    {
+    	return view('maintenance'); 
+    }
 }
-

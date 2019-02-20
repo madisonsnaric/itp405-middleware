@@ -10,8 +10,9 @@ Route::middleware(['authenticated'])->group(function() {
 	Route::get('/settings', 'SettingsController@index'); 
 }); 
 
+Route::get('/maintenance', 'MaintenanceController@index'); 
 
-// Route::middleware(['MaintenaceMode'])->group(function() {
+Route::middleware(['maintenanceMode'])->group(function() {
 	Route::get('/genres', 'GenresController@index'); 
 	Route::get('/tracks', 'TracksController@index'); 
 	Route::get('/tracks?genre={genre->Name}', 'controller@method');
@@ -23,8 +24,7 @@ Route::middleware(['authenticated'])->group(function() {
 	Route::get('/signup', 'SignUpController@index');
 	Route::post('/signup', 'SignUpController@signup');  
 
-	Route::get('/maintenace', 'MaintenanceController@index'); 
-// }); 
+}); 
 
 
 
