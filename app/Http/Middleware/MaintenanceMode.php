@@ -19,14 +19,12 @@ class MaintenanceMode
     {
         $configuration = Configuration::where('name', 'maintenance')->first();
 
-        if ($configuration == 'on') {
+        if ($configuration->value == 'on') {
             return redirect('/maintenance');
         } else {
             return redirect('/login');
         }
     }
 }
-
-
 
 
