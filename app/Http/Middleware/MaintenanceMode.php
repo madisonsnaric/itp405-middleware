@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Auth; 
+use App\Configuration;
 
 class MaintenanceMode
 {
@@ -16,10 +17,16 @@ class MaintenanceMode
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::check()) {
-            return redirect('/maintenance')
+        $configuration = Configuration::where('name', 'maintenance')->first();
+
+        if ($configuration == 'on') {
+            return redirect('/maintenance');
         } else {
-            return redirect('/login'); 
+            return redirect('/login');
         }
     }
 }
+
+
+
+

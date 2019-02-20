@@ -8,11 +8,12 @@ Route::middleware(['authenticated'])->group(function() {
 	Route::get('/profile', 'AdminController@index'); 
 	Route::get('/invoices', 'InvoicesController@index'); 
 	Route::get('/settings', 'SettingsController@index'); 
+	Route::post('/settings', 'SettingsController@configuration');
 }); 
 
 Route::get('/maintenance', 'MaintenanceController@index'); 
 
-Route::middleware(['maintenanceMode'])->group(function() {
+Route::middleware(['maintenancemode'])->group(function() {
 	Route::get('/genres', 'GenresController@index'); 
 	Route::get('/tracks', 'TracksController@index'); 
 	Route::get('/tracks?genre={genre->Name}', 'controller@method');

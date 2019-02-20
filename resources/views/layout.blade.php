@@ -13,6 +13,9 @@
 					<a href="/profile" class="nav-link">Profile</a>
 				</li>
 				<li class="nav-item">
+					<a href="/settings" class="nav-link">Settings</a>
+				</li>
+				<li class="nav-item">
 					<a href="/invoices" class="nav-link">Invoices</a>
 				</li>
 				<li class="nav-item">
