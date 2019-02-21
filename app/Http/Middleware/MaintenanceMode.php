@@ -22,7 +22,7 @@ class MaintenanceMode
         if ($configuration->value == 'on') {
             return redirect('/maintenance');
         } else {
-            return redirect('/login');
+            return $next($request);
         }
     }
 }
