@@ -1,4 +1,4 @@
-let connection = new WebSocket('wss://snaric-itp405-laravel.herokuapp.com/docs'); 
+let connection = new WebSocket('wss://snaric-web-sockets-lab.herokuapp.com/'); 
 
 connection.onopen = () => {
 	console.log('connected from the frontend');
