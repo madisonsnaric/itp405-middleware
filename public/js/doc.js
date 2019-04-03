@@ -12,7 +12,7 @@ connection.onerror = () => {
 
 connection.onmessage = (event) => {
 	console.log('received message', event);
-	document.querySelector('#document').value = event.data;  
+	document.querySelector('#document').innerHTML = event.data;  
 }; 
 
 document.querySelector('#document').addEventListener('input', (event) => {
